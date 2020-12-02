@@ -10,13 +10,13 @@ y = []
 
 for i in range(len(data)):
   if i >= 3:
-    line = dados[i].split(";")
+    line = data[i].split(";")
     x.append(float(line[0]))
     y.append(float(line[2]))
 plt.scatter(x,y, marker='s', color='k', s='250')
 plt.plot(x,y)
 plt.bar(x,y)
-plt.tittle("Deaths by Leukemia in Brazil(2000-2018)")
+plt.title("Deaths by Leukemia in Brazil(2000-2018)")
 plt.xlabel("Year")
 plt.ylabel("Deaths by Leukemia")
 plt.show()
