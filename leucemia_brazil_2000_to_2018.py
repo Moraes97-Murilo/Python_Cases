@@ -11,7 +11,7 @@ y = []
 for i in range(len(data)):
   if i >= 3:
     line = data[i].split(";")
-    x.append(float(line[0]))
+    x.append(int(line[0]))
     y.append(float(line[2]))
 plt.scatter(x,y, marker='+', color='k', s=100)
 plt.plot(x,y, color='r', linestyle='--')
